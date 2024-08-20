@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harutyun Ghumashyan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212; /* Very dark gray */
+            color: #d2b48c; /* Dark beige text color */
+            min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: linear-gradient(135deg, #121212 0%, #1c1c1c 50%, #b89d77 100%);
+            color: #d2b48c;
+            text-align: center;
+            padding: 2em 0;
+            border-bottom: 3px solid #a67b4f; /* Dark beige border */
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #a67b4f; /* Dark beige border around the image */
+        }
+
+        header h1 {
+            margin: 0.5em 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #121212 0%, #1c1c1c 50%, #b89d77 100%);
+            color: #d2b48c;
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1.5em;
+        }
+
+        nav ul li a {
+            color: #d2b48c;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color .3s ease, text-shadow 0.3s ease; 
+        }
+
+        nav ul li a:hover {
+            color: #ffffff; /* Bright white on hover */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Subtle glow effect */
+        }
+
+        .content {
+            flex: 1; /* Makes content take up available space, pushing footer to the bottom */
+            padding: 2em;
+            margin: 0 auto;
+            max-width: 800px;
+            background: #1c1c1c; /* Dark gray with subtle beige tones */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        section {
+            margin-bottom: 2em; /* Space between sections */
+        }
+
+        section h2 {
+            border-bottom: 2px solid #a67b4f; /* Dark beige underline */
+            padding-bottom: 0.5em;
+            font-size: 2em;
+            color: #a67b4f; /* Dark beige text color */
+            margin-bottom: 1em;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        section h2:hover {
+            color: #ffffff; /* Bright white on hover */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Subtle glow effect */
+        }
+
+        footer {
+            background: linear-gradient(135deg, #121212 0%, #1c1c1c 50%, #b89d77 100%);
+            color: #d2b48c;
+            text-align: center;
+            padding: 0.5em 0; /* Smaller footer size */
+            border-top: 2px solid #a67b4f; /* Darker beige border */
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Shadow to enhance visibility */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Avatar.avif" alt="Harutyun Ghumashyan">
+        <h1>Harutyun Ghumashyan</h1>
+        <p>C and JS Developer</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <section>
+            <h2>About</h2>
+            <p>My name is Harutyun. I'm 27 years old. When I was 5 years old, I went to kindergarden. At the age of 7, I started school. I completed my graduation when I was 17 years old and continued my education at YSU. After the first half of the semester, I went to serve in the Army, where I participated in the April 5-days War. After finishing my service, I continued my studies at the university and completed it. After graduation, I worked in load delivery companies and dispatched some techniques at various times since 2024. In 2024, I started my journey into the world of programming languages.</p>
+        </section>
+        
+        <section>
+            <h2>Portfolio</h2>
+            <ol>
+                <li><strong>Remote File Management System (RFMS) in C:</strong> Objective: Develop a Remote File Management System where a server manages files and clients can perform operations on these files over a network. The server should handle multiple client requests concurrently using threads and ensure that file operations are synchronized to prevent data corruption.</li>
+            </ol>
+        </section>
+        
+        <section>
+            <h2>Contact</h2>
+            <p><a href="mailto:harut.ghumashyan.1@gmail.com">harut.ghumashyan.1@gmail.com</a></p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Harutyun Ghumashyan</p>
+    </footer>
+</body>
+</html>
